@@ -31,6 +31,7 @@
     [self.view addSubview:self.tableView];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
