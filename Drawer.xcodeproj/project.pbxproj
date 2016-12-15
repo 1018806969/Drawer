@@ -14,6 +14,13 @@
 		B4691F541E022EE9001BDC81 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F531E022EE9001BDC81 /* CenterViewController.m */; };
 		B4691F581E0232AB001BDC81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4691F571E0232AB001BDC81 /* Assets.xcassets */; };
 		B4691F5B1E023A76001BDC81 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F5A1E023A76001BDC81 /* OtherViewController.m */; };
+		B4691F5E1E02902B001BDC81 /* TXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F5D1E02902B001BDC81 /* TXTabBarController.m */; };
+		B4691F611E02904A001BDC81 /* TXNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F601E02904A001BDC81 /* TXNavController.m */; };
+		B4691F641E0292EE001BDC81 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F631E0292EE001BDC81 /* MessageViewController.m */; };
+		B4691F671E029302001BDC81 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F661E029302001BDC81 /* PersonalViewController.m */; };
+		B4691F6D1E029514001BDC81 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = B4691F6C1E029514001BDC81 /* message.png */; };
+		B4691F6F1E029523001BDC81 /* personal.png in Resources */ = {isa = PBXBuildFile; fileRef = B4691F6E1E029523001BDC81 /* personal.png */; };
+		B4691F711E0299C6001BDC81 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = B4691F701E0299C6001BDC81 /* home.png */; };
 		FC1BE0A3C3F3A636FB88DDA1 /* libPods-Drawer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE039746CA6BC660C65A0AA /* libPods-Drawer.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +41,17 @@
 		B4691F571E0232AB001BDC81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4691F591E023A76001BDC81 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
 		B4691F5A1E023A76001BDC81 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		B4691F5C1E02902B001BDC81 /* TXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTabBarController.h; sourceTree = "<group>"; };
+		B4691F5D1E02902B001BDC81 /* TXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTabBarController.m; sourceTree = "<group>"; };
+		B4691F5F1E02904A001BDC81 /* TXNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXNavController.h; sourceTree = "<group>"; };
+		B4691F601E02904A001BDC81 /* TXNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXNavController.m; sourceTree = "<group>"; };
+		B4691F621E0292EE001BDC81 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		B4691F631E0292EE001BDC81 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		B4691F651E029302001BDC81 /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
+		B4691F661E029302001BDC81 /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
+		B4691F6C1E029514001BDC81 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
+		B4691F6E1E029523001BDC81 /* personal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal.png; sourceTree = "<group>"; };
+		B4691F701E0299C6001BDC81 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		D9C10C204753CC9818577D61 /* Pods-Drawer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drawer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drawer/Pods-Drawer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,16 +99,8 @@
 			children = (
 				B4691F381E01639F001BDC81 /* AppDelegate.h */,
 				B4691F391E01639F001BDC81 /* AppDelegate.m */,
-				B4691F4C1E022744001BDC81 /* LeftViewController.h */,
-				B4691F4D1E022744001BDC81 /* LeftViewController.m */,
-				B4691F521E022EE9001BDC81 /* CenterViewController.h */,
-				B4691F531E022EE9001BDC81 /* CenterViewController.m */,
-				B4691F4F1E02274F001BDC81 /* RightViewController.h */,
-				B4691F501E02274F001BDC81 /* RightViewController.m */,
-				B4691F591E023A76001BDC81 /* OtherViewController.h */,
-				B4691F5A1E023A76001BDC81 /* OtherViewController.m */,
-				B4691F461E01639F001BDC81 /* Info.plist */,
-				B4691F571E0232AB001BDC81 /* Assets.xcassets */,
+				B4691F731E029D55001BDC81 /* DrawerFramework */,
+				B4691F721E029D4F001BDC81 /* TabBarFramework */,
 				B4691F351E01639F001BDC81 /* Supporting Files */,
 			);
 			path = Drawer;
@@ -99,9 +109,44 @@
 		B4691F351E01639F001BDC81 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B4691F461E01639F001BDC81 /* Info.plist */,
+				B4691F571E0232AB001BDC81 /* Assets.xcassets */,
+				B4691F6C1E029514001BDC81 /* message.png */,
+				B4691F6E1E029523001BDC81 /* personal.png */,
+				B4691F701E0299C6001BDC81 /* home.png */,
 				B4691F361E01639F001BDC81 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4691F721E029D4F001BDC81 /* TabBarFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B4691F5F1E02904A001BDC81 /* TXNavController.h */,
+				B4691F601E02904A001BDC81 /* TXNavController.m */,
+				B4691F5C1E02902B001BDC81 /* TXTabBarController.h */,
+				B4691F5D1E02902B001BDC81 /* TXTabBarController.m */,
+				B4691F621E0292EE001BDC81 /* MessageViewController.h */,
+				B4691F631E0292EE001BDC81 /* MessageViewController.m */,
+				B4691F651E029302001BDC81 /* PersonalViewController.h */,
+				B4691F661E029302001BDC81 /* PersonalViewController.m */,
+			);
+			name = TabBarFramework;
+			sourceTree = "<group>";
+		};
+		B4691F731E029D55001BDC81 /* DrawerFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B4691F4C1E022744001BDC81 /* LeftViewController.h */,
+				B4691F4D1E022744001BDC81 /* LeftViewController.m */,
+				B4691F521E022EE9001BDC81 /* CenterViewController.h */,
+				B4691F531E022EE9001BDC81 /* CenterViewController.m */,
+				B4691F4F1E02274F001BDC81 /* RightViewController.h */,
+				B4691F501E02274F001BDC81 /* RightViewController.m */,
+				B4691F591E023A76001BDC81 /* OtherViewController.h */,
+				B4691F5A1E023A76001BDC81 /* OtherViewController.m */,
+			);
+			name = DrawerFramework;
 			sourceTree = "<group>";
 		};
 		CD1ECE0FFE34FB8D7CE92E7F /* Frameworks */ = {
@@ -174,6 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4691F711E0299C6001BDC81 /* home.png in Resources */,
+				B4691F6F1E029523001BDC81 /* personal.png in Resources */,
+				B4691F6D1E029514001BDC81 /* message.png in Resources */,
 				B4691F581E0232AB001BDC81 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,11 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4691F5E1E02902B001BDC81 /* TXTabBarController.m in Sources */,
+				B4691F611E02904A001BDC81 /* TXNavController.m in Sources */,
 				B4691F511E02274F001BDC81 /* RightViewController.m in Sources */,
 				B4691F4E1E022744001BDC81 /* LeftViewController.m in Sources */,
 				B4691F3A1E01639F001BDC81 /* AppDelegate.m in Sources */,
 				B4691F5B1E023A76001BDC81 /* OtherViewController.m in Sources */,
+				B4691F641E0292EE001BDC81 /* MessageViewController.m in Sources */,
 				B4691F371E01639F001BDC81 /* main.m in Sources */,
+				B4691F671E029302001BDC81 /* PersonalViewController.m in Sources */,
 				B4691F541E022EE9001BDC81 /* CenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

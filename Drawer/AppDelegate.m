@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "TXTabBarController.h"
+
+
 #import "MMDrawerController.h"
 #import "LeftViewController.h"
 #import "CenterViewController.h"
@@ -24,30 +27,40 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    LeftViewController *leftVc = [[LeftViewController alloc]init];
-    RightViewController *rightVc = [[RightViewController alloc]init];
-    CenterViewController *centerVc = [[CenterViewController alloc]init];
+    //1.测试MMDrawerController，展示一个根视图为drawerController的framwork
     
-    //2、初始化导航控制器
-    UINavigationController *centerNvaVC = [[UINavigationController alloc]initWithRootViewController:centerVc];
-    UINavigationController *leftNvaVC = [[UINavigationController alloc]initWithRootViewController:leftVc];
-    UINavigationController *rightNvaVC = [[UINavigationController alloc]initWithRootViewController:rightVc];
+//    LeftViewController *leftVc = [[LeftViewController alloc]init];
+//    RightViewController *rightVc = [[RightViewController alloc]init];
+//    CenterViewController *centerVc = [[CenterViewController alloc]init];
+//    
+//    //初始化导航控制器
+//    UINavigationController *centerNvaVC = [[UINavigationController alloc]initWithRootViewController:centerVc];
+//    UINavigationController *leftNvaVC = [[UINavigationController alloc]initWithRootViewController:leftVc];
+//    UINavigationController *rightNvaVC = [[UINavigationController alloc]initWithRootViewController:rightVc];
+//    
+//    self.drawerController = [[MMDrawerController alloc]initWithCenterViewController:centerNvaVC leftDrawerViewController:leftNvaVC rightDrawerViewController:rightNvaVC];
+//    
+//    //设置打开/关闭drawer的手势
+//    self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+//    self.drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
+//    //设置左右drawer显示多少
+//    self.drawerController.maximumLeftDrawerWidth = 200 ;
+//    self.drawerController.maximumRightDrawerWidth = 200;
+//    
+//    
+//    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    _window.backgroundColor = [UIColor whiteColor];
+//    [_window makeKeyAndVisible];
+//    _window.rootViewController = _drawerController ;
+
+    //2.展示一个tabbar为根视图的framework
     
-    self.drawerController = [[MMDrawerController alloc]initWithCenterViewController:centerNvaVC leftDrawerViewController:leftNvaVC rightDrawerViewController:rightNvaVC];
-    
-    //设置打开/关闭drawer的手势
-    self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
-    self.drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
-    //设置左右drawer显示多少
-    self.drawerController.maximumLeftDrawerWidth = 200 ;
-    self.drawerController.maximumRightDrawerWidth = 200;
-    
-    
+    TXTabBarController *tabbarController = [[TXTabBarController alloc]init];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
     [_window makeKeyAndVisible];
-    _window.rootViewController = _drawerController ;
-    
+    _window.rootViewController = tabbarController ;
+
     
     return YES;
 }
