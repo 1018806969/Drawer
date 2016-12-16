@@ -23,6 +23,10 @@
 		B4691F711E0299C6001BDC81 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = B4691F701E0299C6001BDC81 /* home.png */; };
 		B4691F761E029F9D001BDC81 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F751E029F9D001BDC81 /* HomeViewController.m */; };
 		B4691F791E038001001BDC81 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F781E038001001BDC81 /* ContentViewController.m */; };
+		B4691F7E1E03983C001BDC81 /* ZJDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F7D1E03983C001BDC81 /* ZJDrawerController.m */; };
+		B4691F851E0399A6001BDC81 /* ZJCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F801E0399A6001BDC81 /* ZJCenterViewController.m */; };
+		B4691F861E0399A6001BDC81 /* ZJLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F821E0399A6001BDC81 /* ZJLeftViewController.m */; };
+		B4691F871E0399A6001BDC81 /* ZJRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F841E0399A6001BDC81 /* ZJRightViewController.m */; };
 		FC1BE0A3C3F3A636FB88DDA1 /* libPods-Drawer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE039746CA6BC660C65A0AA /* libPods-Drawer.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +62,14 @@
 		B4691F751E029F9D001BDC81 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B4691F771E038001001BDC81 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
 		B4691F781E038001001BDC81 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		B4691F7C1E03983C001BDC81 /* ZJDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDrawerController.h; sourceTree = "<group>"; };
+		B4691F7D1E03983C001BDC81 /* ZJDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJDrawerController.m; sourceTree = "<group>"; };
+		B4691F7F1E0399A6001BDC81 /* ZJCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCenterViewController.h; sourceTree = "<group>"; };
+		B4691F801E0399A6001BDC81 /* ZJCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCenterViewController.m; sourceTree = "<group>"; };
+		B4691F811E0399A6001BDC81 /* ZJLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLeftViewController.h; sourceTree = "<group>"; };
+		B4691F821E0399A6001BDC81 /* ZJLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLeftViewController.m; sourceTree = "<group>"; };
+		B4691F831E0399A6001BDC81 /* ZJRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJRightViewController.h; sourceTree = "<group>"; };
+		B4691F841E0399A6001BDC81 /* ZJRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJRightViewController.m; sourceTree = "<group>"; };
 		D9C10C204753CC9818577D61 /* Pods-Drawer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drawer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drawer/Pods-Drawer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +117,12 @@
 			children = (
 				B4691F381E01639F001BDC81 /* AppDelegate.h */,
 				B4691F391E01639F001BDC81 /* AppDelegate.m */,
+				B4691F7F1E0399A6001BDC81 /* ZJCenterViewController.h */,
+				B4691F801E0399A6001BDC81 /* ZJCenterViewController.m */,
+				B4691F811E0399A6001BDC81 /* ZJLeftViewController.h */,
+				B4691F821E0399A6001BDC81 /* ZJLeftViewController.m */,
+				B4691F831E0399A6001BDC81 /* ZJRightViewController.h */,
+				B4691F841E0399A6001BDC81 /* ZJRightViewController.m */,
 				B4691F7A1E039166001BDC81 /* CustomSimpleDrawer */,
 				B4691F731E029D55001BDC81 /* DrawerFramework */,
 				B4691F721E029D4F001BDC81 /* TabBarFramework */,
@@ -116,6 +134,7 @@
 		B4691F351E01639F001BDC81 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B4691F7B1E03983C001BDC81 /* ZJDrawerController */,
 				B4691F461E01639F001BDC81 /* Info.plist */,
 				B4691F571E0232AB001BDC81 /* Assets.xcassets */,
 				B4691F6C1E029514001BDC81 /* message.png */,
@@ -165,6 +184,15 @@
 				B4691F781E038001001BDC81 /* ContentViewController.m */,
 			);
 			name = CustomSimpleDrawer;
+			sourceTree = "<group>";
+		};
+		B4691F7B1E03983C001BDC81 /* ZJDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				B4691F7C1E03983C001BDC81 /* ZJDrawerController.h */,
+				B4691F7D1E03983C001BDC81 /* ZJDrawerController.m */,
+			);
+			path = ZJDrawerController;
 			sourceTree = "<group>";
 		};
 		CD1ECE0FFE34FB8D7CE92E7F /* Frameworks */ = {
@@ -302,14 +330,18 @@
 				B4691F5E1E02902B001BDC81 /* TXTabBarController.m in Sources */,
 				B4691F611E02904A001BDC81 /* TXNavController.m in Sources */,
 				B4691F511E02274F001BDC81 /* RightViewController.m in Sources */,
+				B4691F871E0399A6001BDC81 /* ZJRightViewController.m in Sources */,
 				B4691F4E1E022744001BDC81 /* LeftViewController.m in Sources */,
 				B4691F3A1E01639F001BDC81 /* AppDelegate.m in Sources */,
 				B4691F5B1E023A76001BDC81 /* OtherViewController.m in Sources */,
 				B4691F761E029F9D001BDC81 /* HomeViewController.m in Sources */,
 				B4691F641E0292EE001BDC81 /* MessageViewController.m in Sources */,
 				B4691F791E038001001BDC81 /* ContentViewController.m in Sources */,
+				B4691F851E0399A6001BDC81 /* ZJCenterViewController.m in Sources */,
 				B4691F371E01639F001BDC81 /* main.m in Sources */,
+				B4691F861E0399A6001BDC81 /* ZJLeftViewController.m in Sources */,
 				B4691F671E029302001BDC81 /* PersonalViewController.m in Sources */,
+				B4691F7E1E03983C001BDC81 /* ZJDrawerController.m in Sources */,
 				B4691F541E022EE9001BDC81 /* CenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,13 @@
 
 #import "HomeViewController.h"
 
+
+#import "ZJDrawerController.h"
+#import "ZJCenterViewController.h"
+#import "ZJLeftViewController.h"
+#import "ZJRightViewController.h"
+
+
 @interface AppDelegate ()
 
 @property(nonatomic,strong)MMDrawerController *drawerController;
@@ -63,12 +70,36 @@
 //    _window.rootViewController = tabbarController ;
 
     //3.自己实现一个简单的drawer
-    HomeViewController *homeVc = [[HomeViewController alloc]init];
-    UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVc];
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    _window.backgroundColor = [UIColor whiteColor];
-    [_window makeKeyAndVisible];
-    _window.rootViewController = homeNav ;
+//    HomeViewController *homeVc = [[HomeViewController alloc]init];
+//    UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVc];
+//    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    _window.backgroundColor = [UIColor whiteColor];
+//    [_window makeKeyAndVisible];
+//    _window.rootViewController = homeNav ;
+    
+    //4.网上找的ZJDrawerController库
+    
+    ZJLeftViewController *left = [ZJLeftViewController new];
+    
+    ZJCenterViewController *center = [ZJCenterViewController new];
+    
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:center];
+    
+    ZJRightViewController *right = [ZJRightViewController new];
+    
+    ZJDrawerController *drawer = [[ZJDrawerController alloc] initWithLeftController: left centerController:navi rightController:right];
+    
+    // 背景图片
+    drawer.backgroundImage = [UIImage imageNamed:@"1"];
+    // 动画类型
+    drawer.drawerControllerStyle = ZJDrawerControllerStyleScale;
+    // 任何界面都能打开抽屉
+    drawer.canOpenDrawerAtAnyPage = YES;
+    //...
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = drawer;
+    [self.window makeKeyAndVisible];
 
     return YES;
 }
