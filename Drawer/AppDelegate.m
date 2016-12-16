@@ -8,13 +8,14 @@
 
 #import "AppDelegate.h"
 
-#import "TXTabBarController.h"
-
-
 #import "MMDrawerController.h"
 #import "LeftViewController.h"
 #import "CenterViewController.h"
 #import "RightViewController.h"
+
+#import "TXTabBarController.h"
+
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -55,13 +56,20 @@
 
     //2.展示一个tabbar为根视图的framework
     
-    TXTabBarController *tabbarController = [[TXTabBarController alloc]init];
+//    TXTabBarController *tabbarController = [[TXTabBarController alloc]init];
+//    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    _window.backgroundColor = [UIColor whiteColor];
+//    [_window makeKeyAndVisible];
+//    _window.rootViewController = tabbarController ;
+
+    //3.自己实现一个简单的drawer
+    HomeViewController *homeVc = [[HomeViewController alloc]init];
+    UINavigationController *homeNav = [[UINavigationController alloc]initWithRootViewController:homeVc];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
     [_window makeKeyAndVisible];
-    _window.rootViewController = tabbarController ;
+    _window.rootViewController = homeNav ;
 
-    
     return YES;
 }
 

@@ -21,6 +21,8 @@
 		B4691F6D1E029514001BDC81 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = B4691F6C1E029514001BDC81 /* message.png */; };
 		B4691F6F1E029523001BDC81 /* personal.png in Resources */ = {isa = PBXBuildFile; fileRef = B4691F6E1E029523001BDC81 /* personal.png */; };
 		B4691F711E0299C6001BDC81 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = B4691F701E0299C6001BDC81 /* home.png */; };
+		B4691F761E029F9D001BDC81 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F751E029F9D001BDC81 /* HomeViewController.m */; };
+		B4691F791E038001001BDC81 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4691F781E038001001BDC81 /* ContentViewController.m */; };
 		FC1BE0A3C3F3A636FB88DDA1 /* libPods-Drawer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE039746CA6BC660C65A0AA /* libPods-Drawer.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,10 @@
 		B4691F6C1E029514001BDC81 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
 		B4691F6E1E029523001BDC81 /* personal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal.png; sourceTree = "<group>"; };
 		B4691F701E0299C6001BDC81 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		B4691F741E029F9D001BDC81 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B4691F751E029F9D001BDC81 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B4691F771E038001001BDC81 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		B4691F781E038001001BDC81 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		D9C10C204753CC9818577D61 /* Pods-Drawer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drawer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drawer/Pods-Drawer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +105,7 @@
 			children = (
 				B4691F381E01639F001BDC81 /* AppDelegate.h */,
 				B4691F391E01639F001BDC81 /* AppDelegate.m */,
+				B4691F7A1E039166001BDC81 /* CustomSimpleDrawer */,
 				B4691F731E029D55001BDC81 /* DrawerFramework */,
 				B4691F721E029D4F001BDC81 /* TabBarFramework */,
 				B4691F351E01639F001BDC81 /* Supporting Files */,
@@ -147,6 +154,17 @@
 				B4691F5A1E023A76001BDC81 /* OtherViewController.m */,
 			);
 			name = DrawerFramework;
+			sourceTree = "<group>";
+		};
+		B4691F7A1E039166001BDC81 /* CustomSimpleDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				B4691F741E029F9D001BDC81 /* HomeViewController.h */,
+				B4691F751E029F9D001BDC81 /* HomeViewController.m */,
+				B4691F771E038001001BDC81 /* ContentViewController.h */,
+				B4691F781E038001001BDC81 /* ContentViewController.m */,
+			);
+			name = CustomSimpleDrawer;
 			sourceTree = "<group>";
 		};
 		CD1ECE0FFE34FB8D7CE92E7F /* Frameworks */ = {
@@ -287,7 +305,9 @@
 				B4691F4E1E022744001BDC81 /* LeftViewController.m in Sources */,
 				B4691F3A1E01639F001BDC81 /* AppDelegate.m in Sources */,
 				B4691F5B1E023A76001BDC81 /* OtherViewController.m in Sources */,
+				B4691F761E029F9D001BDC81 /* HomeViewController.m in Sources */,
 				B4691F641E0292EE001BDC81 /* MessageViewController.m in Sources */,
+				B4691F791E038001001BDC81 /* ContentViewController.m in Sources */,
 				B4691F371E01639F001BDC81 /* main.m in Sources */,
 				B4691F671E029302001BDC81 /* PersonalViewController.m in Sources */,
 				B4691F541E022EE9001BDC81 /* CenterViewController.m in Sources */,
